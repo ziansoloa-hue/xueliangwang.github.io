@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点众短篇签约流程 | 创作者平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/v4-shims.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#8B5CF6',
+                        light: '#F8FAFC',
+                        dark: '#1E293B'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .gradient-text {
+                background: linear-gradient(135deg, #3B82F6, #10B981);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark min-h-screen">
+    <!-- 顶部导航 -->
+    <nav class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                    <i class="fa fa-pencil text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold gradient-text">点众文学</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#process" class="hover:text-primary transition-colors duration-300">签约流程</a>
+                <a href="#authors" class="hover:text-primary transition-colors duration-300">作者指南</a>
+            </div>
+            <button class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105">
+                <i class="fa fa-sign-in mr-2"></i>立即签约
+            </button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="container mx-auto px-6 py-16 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-[clamp(2rem,4vw,3rem)] font-bold mb-6 leading-tight animate-slide-up">
+                点众短篇<span class="gradient-text">签约流程</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 animate-fade-in">
+                详细的签约步骤指南，帮助您顺利成为点众文学签约作者
+            </p>
+        </div>
+    </section>
+
+    <!-- 签约流程 -->
+    <section id="process" class="container mx-auto px-6 py-16 bg-gradient-to-br from-blue-50 to-green-50 rounded-3xl my-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 gradient-text">签约流程</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">简单四步，完成签约，开启您的文学创作生涯</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- 步骤1 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-2xl font-bold text-primary">1</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-center">注册账号</h3>
+                <p class="text-gray-600 text-center">填写笔名和邀请码，完成作者账号注册</p>
+                <div class="mt-6 text-center">
+                    <span class="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full">邀请码: GAMN9A</span>
+                </div>
+            </div>
+
+            <!-- 步骤2 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-2xl font-bold text-secondary">2</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-center">选择类型</h3>
+                <p class="text-gray-600 text-center">点击"短篇"分类，进入创作工作台</p>
+                <div class="mt-6 text-center">
+                    <i class="fa fa-book text-3xl text-secondary"></i>
+                </div>
+            </div>
+
+            <!-- 步骤3 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-2xl font-bold text-accent">3</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-center">上传作品</h3>
+                <p class="text-gray-600 text-center">上传作品内容，设置分章节，完成作品发布</p>
+                <div class="mt-6 text-center">
+                    <i class="fa fa-upload text-3xl text-accent"></i>
+                </div>
+            </div>
+
+            <!-- 步骤4 -->
+            <div class="bg-white rounded-xl p-6 shadow-lg card-hover">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <span class="text-2xl font-bold text-primary">4</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-4 text-center">完成签约</h3>
+                <p class="text-gray-600 text-center">等待审核通过，正式成为签约作者</p>
+                <div class="mt-6 text-center">
+                    <i class="fa fa-check-circle text-3xl text-primary"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 详细步骤说明 -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 gradient-text">详细操作指南</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">图文并茂的操作说明，让您轻松完成每一步</p>
+        </div>
+
+        <!-- 步骤1详细说明 -->
+        <div class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-xl font-bold text-primary">1</span>
+                </div>
+                <h3 class="text-2xl font-bold">填写笔名和邀请码</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://p9-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/0e352599420445748422a40ae812a893.png?rcl=20251230163134A20A20F5C37E691B1DDF&rk3s=8e244e95&rrcfp=f512b60b&x-expires=1768379511&x-signature=R2mlrw2QmoLrvIENihm4pJX2QhI=" alt="作者信息填写界面" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">在注册界面填写您的笔名（8-20个字符）</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">输入邀请码：<span class="font-bold text-primary">GAMN9A</span></p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">填写作者简介（选填，0-40个字符）</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">点击【保存】按钮完成注册</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 步骤2详细说明 -->
+        <div class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-xl font-bold text-secondary">2</span>
+                </div>
+                <h3 class="text-2xl font-bold">进入创作工作台</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa fa-check text-secondary mt-1"></i>
+                            <p class="text-gray-600">登录后进入创作者平台主界面</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa fa-check text-secondary mt-1"></i>
+                            <p class="text-gray-600">选择【短篇】分类</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa fa-check text-secondary mt-1"></i>
+                            <p class="text-gray-600">点击醒目的【去创作】按钮</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa fa-check text-secondary mt-1"></i>
+                            <p class="text-gray-600">开始您的作品创作之旅</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://p9-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/ba817f132b29481db0403c017f9bfb10.png?rcl=20251230163134A20A20F5C37E691B1DDF&rk3s=8e244e95&rrcfp=f512b60b&x-expires=1768379511&x-signature=M5BvT5HNcU3pNNWo52a1Bday72s=" alt="创作者平台主界面" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- 步骤3详细说明 -->
+        <div class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-xl font-bold text-accent">3</span>
+                </div>
+                <h3 class="text-2xl font-bold">上传作品并分章</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://p9-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/1e9a7dbb027340319b7dfe2d32369748.png?rcl=20251230163134A20A20F5C37E691B1DDF&rk3s=8e244e95&rrcfp=f512b60b&x-expires=1768379511&x-signature=W2YI4l44LZ3Ay6%2BCtkkQe%2Fj2D30=" alt="作品上传界面" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-accent mt-1"></i>
+                        <p class="text-gray-600">填写作品书名和导语</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-accent mt-1"></i>
+                        <p class="text-gray-600">上传正文内容，注意右侧分章滚动条</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-accent mt-1"></i>
+                        <p class="text-gray-600">可以多次分章，设置合适的章节长度</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-accent mt-1"></i>
+                        <p class="text-gray-600">全部填写好后点击【下一步】</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 步骤4详细说明 -->
+        <div>
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                    <span class="text-xl font-bold text-primary">4</span>
+                </div>
+                <h3 class="text-2xl font-bold">分章技巧示例</h3>
+            </div>
+            <div class="space-y-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-check text-primary mt-1"></i>
+                                <p class="text-gray-600">设置第1、2章的分章线</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-check text-primary mt-1"></i>
+                                <p class="text-gray-600">每章节要大于700字</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-check text-primary mt-1"></i>
+                                <p class="text-gray-600">建议卡点之前1k字左右一章节</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/2a4ea7df5af04ca399513aabb64d9cb9.png?rcl=20251230163134A20A20F5C37E691B1DDF&rk3s=8e244e95&rrcfp=f512b60b&x-expires=1768379511&x-signature=x8k12ZXtF85R4U19VQ326Jqp%2FsA=" alt="分章线示例1" class="rounded-xl shadow-lg w-full h-auto">
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center mt-12">
+                    <div>
+                        <img src="https://p6-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/pc/super_tool/741f6883bf224ecab44671528e365fc7.png?rcl=20251230163134A20A20F5C37E691B1DDF&rk3s=8e244e95&rrcfp=f512b60b&x-expires=1768379511&x-signature=evtVIGdQpzYqBXS8I%2F%2BMda8nxX0=" alt="分章线示例2" class="rounded-xl shadow-lg w-full h-auto">
+                    </div>
+                    <div>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-check text-primary mt-1"></i>
+                                <p class="text-gray-600">设置第2、3章的分章线</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-check text-primary mt-1"></i>
+                                <p class="text-gray-600">卡点位置在3-5k左右</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa fa-check text-primary mt-1"></i>
+                                <p class="text-gray-600">卡点后可以尽可能多分章节</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作者区分 -->
+    <section id="authors" class="container mx-auto px-6 py-16 bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl my-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 gradient-text">作者指南</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">根据您的情况选择对应的注册方式</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- 老作者 -->
+            <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                        <i class="fa fa-user text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">老作者</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">登录老网站：<a href="https://www.ssread.cn/" class="text-primary hover:underline">https://www.ssread.cn/</a></p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">系统会提示与新网站笔名绑定</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-yellow-50 p-3 rounded-lg">
+                        <i class="fa fa-exclamation-triangle text-yellow-500 mt-1"></i>
+                        <p class="text-gray-700 font-semibold">注意：不要直接登录新网站，否则无法绑定之前的笔名！</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-primary mt-1"></i>
+                        <p class="text-gray-600">绑定后用手机号登录新网址即可</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新作者 -->
+            <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+                        <i class="fa fa-user-plus text-secondary text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">新作者</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-secondary mt-1"></i>
+                        <p class="text-gray-600">直接登录新网站：<a href="https://dznovel.ssread.cn/login" class="text-secondary hover:underline">https://dznovel.ssread.cn/login</a></p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-secondary mt-1"></i>
+                        <p class="text-gray-600">完成注册、登录、发表作品</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fa fa-check text-secondary mt-1"></i>
+                        <p class="text-gray-600">填写笔名和邀请码完成注册</p>
+                    </div>
+                    <div class="flex items-start space-x-3 bg-green-50 p-3 rounded-lg">
+                        <i class="fa fa-star text-yellow-500 mt-1"></i>
+                        <p class="text-gray-700 font-semibold">邀请码：<span class="text-secondary font-bold">GAMN9A</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="container mx-auto px-6 py-12 border-t border-gray-200">
+        <div class="text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                    <i class="fa fa-pencil text-white"></i>
+                </div>
+                <h3 class="text-lg font-bold gradient-text">点众文学</h3>
+            </div>
+            <p class="text-gray-600 mb-6">专注于短篇文学创作，为作者提供优质的创作平台和服务</p>
+            <div class="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+                <p>© 2025 点众文学 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 悬浮按钮 -->
+    <div class="fixed bottom-8 right-8 z-20">
+        <button onclick="scrollToTop()" class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-110">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 滚动到顶部
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 滚动动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 观察所有卡片元素
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card);
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+            } else {
+                nav.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+            }
+        });
+    </script>
+</body>
+</html>
